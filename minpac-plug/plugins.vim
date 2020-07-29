@@ -23,7 +23,6 @@ endif
 if exists('*minpac#init')
   call minpac#init()
   call minpac#add('k-takata/minpac', {'type': 'opt'})
-  call minpac#add('chriskempson/base16-vim')
   call minpac#add('morhetz/gruvbox')
   call minpac#add('vim-airline/vim-airline')
   call minpac#add('vim-airline/vim-airline-themes')

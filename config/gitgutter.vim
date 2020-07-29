@@ -1,7 +1,6 @@
 " Define to 250ms in order to update faster the status of each lines.
 " Defaults to 4s
 "set updatetime=250
-let g:gitgutter_set_sign_backgrounds = 1
 
 
 let g:gitgutter_sign_added              = '⏽'

@@ -35,7 +35,8 @@ set splitright
 set scrolloff=3
 set diffopt+=vertical
 set wildmenu
-
+" To toggle from paste mode to non-paste mode
+set pastetoggle=<F12>
 
 if has('nvim')
   set inccommand=nosplit

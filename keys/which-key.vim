@@ -55,7 +55,7 @@ let g:which_key_map.a = {
       \ 'r' : [':set norelativenumber!'  , 'relative line nums'],
       \ 's' : [':let @/ = ""'            , 'remove search highlight'],
       \ 'T' : [':FloatermToggle'         , 'terminal bottom'],
-      \ 't' : [':Floaterm'               , 'terminal float'],
+      \ 't' : [':FloatermNew'            , 'terminal float'],
       \ }
 
 " b is for buffer
@@ -179,7 +179,7 @@ let g:which_key_map.t = {
       \ 'p' : [':FloatermNew python'                            , 'python'],
       \ 'r' : [':FloatermNew ranger'                            , 'ranger'],
       \ 'T' : [':FloatermToggle'                                , 'toggle'],
-      \ 't' : [':Floaterm'                                      , 'terminal float'],
+      \ 't' : [':FloatermNew'                                   , 'terminal float'],
       \ 'y' : [':FloatermNew ytop'                              , 'ytop'],
       \ 's' : [':FloatermNew ncdu'                              , 'ncdu'],
       \ }

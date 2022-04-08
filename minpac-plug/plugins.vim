@@ -12,11 +12,11 @@ execute 'set runtimepath^=' . s:my_vim_dir
 " To add a personal templates directory to the runtimepath
 execute 'set runtimepath+=' . s:my_vim_dir . '/../templates'
 
-" auto-install minpac 
+" auto-install minpac
 if empty(glob('~/.config/nvim/pack'))
   silent !git clone https://github.com/k-takata/minpac.git
     \ ~/.config/nvim/pack/minpac/opt/minpac
-  autocmd VimEnter * PackUpdate 
+  autocmd VimEnter * PackUpdate
 endif
 
 " Needed to autoload packages depending on filetype
@@ -41,7 +41,8 @@ if exists('*minpac#init')
   call minpac#add('thaerkh/vim-indentguides')
   call minpac#add('unblevable/quick-scope')
   call minpac#add('easymotion/vim-easymotion')
-  call minpac#add('junegunn/fzf',{'dir': '.fzf','do' : './install --all'})
+  "call minpac#add('junegunn/fzf',{ 'do': { -> fzf#install() } })
+  call minpac#add('antoinemadec/coc-fzf')
   call minpac#add('junegunn/fzf.vim')
   call minpac#add('skywind3000/asyncrun.vim')
   call minpac#add('vim-syntastic/syntastic')
@@ -74,12 +75,18 @@ if exists('*minpac#init')
   call minpac#add('tpope/vim-obsession')
   call minpac#add('nelsyeung/twig.vim')
   call minpac#add('neoclide/coc.nvim', {'branch': 'release'})
-  call minpac#add('kevinhwang91/rnvimr', {'do': 'make sync'})
+  call minpac#add('kevinhwang91/rnvimr')
   call minpac#add('voldikss/vim-floaterm')
   call minpac#add('liuchengxu/vim-which-key')
-  call minpac#add('mhinz/vim-startify')
+  "call minpac#add('mhinz/vim-startify')
   call minpac#add('ryanoasis/vim-devicons')
-  call minpac#add('liuchengxu/vista.vim')
+  "call minpac#add('liuchengxu/vista.vim')
+  "call minpac#add('elythyr/vim-sync', {'branch': 'improvements'})
+  call minpac#add('kenn7/vim-arsync')
+  call minpac#add('dhruvasagar/vim-railscasts-theme')
+  call minpac#add('Asheq/close-buffers.vim')
+  call minpac#add('sniphpets/sniphpets-symfony')
+  call minpac#add('Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' })
 endif
 
 command! PackUpdate packadd minpac | source $MYVIMRC | call minpac#update()

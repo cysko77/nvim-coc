@@ -9,7 +9,7 @@ augroup ely_custom_commands
   endif
 
   " Delete all trailling spaces on write
-  " autocmd BufWritePre * %s/\s\+$//e
+  autocmd BufWritePre * %s/\s\+$//e
 
   " jump to last position in file
   autocmd BufReadPost *

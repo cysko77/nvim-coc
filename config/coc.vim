@@ -8,6 +8,7 @@
     \ 'coc-floaterm',
     \ 'coc-html',
     \ 'coc-css',
+    \ 'coc-sql',
     \ 'coc-emoji',
     \ 'coc-cssmodules',
     \ 'coc-yaml',
@@ -20,6 +21,7 @@
     \ 'coc-yank',
     \ 'coc-json',
     \ 'coc-marketplace',
+    \ 'coc-fzf-preview',
     \ ]
 
 " TextEdit might fail if hidden is not set.
